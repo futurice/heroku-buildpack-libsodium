@@ -40,6 +40,10 @@ export_env_dir "$ENV_DIR"
 
 ### Compile
 
+echo "Libsodium building dirs: BASE_DIR $PWD, BUILD_DIR $BUILD_DIR, CACHE_DIR $CACHE_DIR"
+echo "Tree structure:"
+echo $(find . -type f -print)
+
 cp $TARBALL $CACHE_DIR/
 cd $CACHE_DIR
 echo -n "-----> Fetching $SODIUM_DIR... "

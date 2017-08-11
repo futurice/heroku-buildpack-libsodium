@@ -44,7 +44,7 @@ echo "Libsodium building dirs: BASE_DIR $PWD, BUILD_DIR $BUILD_DIR, CACHE_DIR $C
 echo "Tree structure:"
 echo $(find . -type f -print)
 
-cp $TARBALL $CACHE_DIR/
+cp bin/$TARBALL $CACHE_DIR/
 cd $CACHE_DIR
 echo -n "-----> Fetching $SODIUM_DIR... "
 tar -xf $TARBALL
